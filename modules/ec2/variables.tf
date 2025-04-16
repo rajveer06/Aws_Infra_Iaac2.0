@@ -6,7 +6,7 @@ variable "sg_id" {
     type = list
     description = "List of security group IDs to associate with the security group"
 }
-variable "ami_id" {
+variable "ami" {
     type = string
     description = "AMI ID for the EC2 instance"
 }

@@ -16,7 +16,7 @@ module "ec2_instance" {
   key_name       = var.key_name
   instance_name =  var.instance_name
   instance_type  = var.instance_type
-  ami            = var.ami
+  ami            = "ami-087f352c165340ea1"
 }
 
 module "tf_state" {

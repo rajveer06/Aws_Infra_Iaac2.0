@@ -15,7 +15,7 @@ module "ec2_instance" {
   sg_id          = [module.sg.sg_id]
   key_name       = var.key_name
   instance_type  = var.instance_type
-  ami_id         = var.ami
+  ami            = var.ami
 }
 
 module "tf_state" {

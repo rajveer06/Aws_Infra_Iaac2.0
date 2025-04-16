@@ -17,6 +17,7 @@ module "ec2_instance" {
   instance_name =  var.instance_name
   instance_type  = var.instance_type
   ami            = var.ami
+  availability_zone = var.availability_zone
 }
 
 module "tf_state" {

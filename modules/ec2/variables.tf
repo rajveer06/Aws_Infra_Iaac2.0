@@ -24,3 +24,8 @@ variable "instance_name" {
   description = "Name tag for the instance"
   type        = string
 }
+variable "availability_zone" {
+    type = list
+    description = "List of availability zones to associate with the instance"
+    default = ["us-west-2a"]
+}

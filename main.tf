@@ -14,6 +14,7 @@ module "ec2_instance" {
   subnet_id      = [module.vpc.subnet_id]
   sg_id          = [module.sg.sg_id]
   key_name       = var.key_name
+  instance_name =  var.instance_name
   instance_type  = var.instance_type
   ami            = var.ami
 }

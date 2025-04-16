@@ -23,5 +23,14 @@ variable "bucket_name" {
     description = "S3 bucket name for the EC2 instance"
     default = null
 }
-  
+variable "aws_access_key" {
+    type = string
+    description = "AWS access key for the EC2 instance"
+    default = null
+}
+variable "aws_secret_key" {
+    type = string
+    description = "AWS secret key for the EC2 instance"
+    default = null
+}
 

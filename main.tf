@@ -11,8 +11,8 @@ module "sg" {
 
 module "ec2" {
   source         = "./modules/ec2"
-  subnet_id      = module.vpc.subnet_id
-  sg_id          = module.sg.sg_id
+  subnet_id      = [module.vpc.subnet_id]
+  sg_id          = [module.sg.sg_id]
   key_name       = var.key_name
   instance_type  = var.instance_type
   ami_id         = var.ami_id

@@ -8,3 +8,8 @@ variable "subnet_cidr" {
     type = string
     description = "Subnet CIDR Block"
 }
+variable "availability_zone" {
+    default = ["us-west-2a"]
+    type = string
+    description = "Availability Zone for the subnet"
+}

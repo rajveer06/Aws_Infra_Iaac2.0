@@ -19,3 +19,7 @@ variable "key_name" {
     type = string
     description = "Key pair name for SSH access"
 }
+variable "instance_name" {
+  description = "Name tag for the instance"
+  type        = string
+}

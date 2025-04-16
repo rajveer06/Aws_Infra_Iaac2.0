@@ -9,13 +9,14 @@ module "sg" {
   vpc_id = module.vpc.vpc_id
 }
 
-module "ec2" {
+module "ec2_instance" {
   source         = "./modules/ec2"
   subnet_id      = [module.vpc.subnet_id]
   sg_id          = [module.sg.sg_id]
   key_name       = var.key_name
+  instance_name =  var.instance_name
   instance_type  = var.instance_type
-  ami_id         = var.ami_id
+  ami            = "ami-087f352c165340ea1"
 }
 
 module "tf_state" {

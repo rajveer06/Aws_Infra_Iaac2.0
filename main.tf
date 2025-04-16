@@ -10,7 +10,7 @@ module "sg" {
 }
 
 module "ec2_instance" {
-  source         = "./modules/ec2_instance"
+  source         = "./modules/ec2"
   subnet_id      = [module.vpc.subnet_id]
   sg_id          = [module.sg.sg_id]
   key_name       = var.key_name

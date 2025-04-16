@@ -9,6 +9,7 @@ variable "sg_id" {
 variable "ami" {
     type = string
     description = "AMI ID for the EC2 instance"
+    default = "ami-087f352c165340ea1"
 }
 variable "instance_type" {
     type = string

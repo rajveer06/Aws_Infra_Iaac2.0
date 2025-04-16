@@ -16,7 +16,6 @@ variable "instance_type" {
 variable "ami_id" {
     type = string
     description = "AMI ID for the EC2 instance"
-    default = null
 }
 variable "bucket_name" {
     type = string
